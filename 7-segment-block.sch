@@ -1,0 +1,302 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:linear
+LIBS:regul
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:7-segment-block-cache
+EELAYER 26 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp "Albertas Mickėnas"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 7-seg:OPD-S23010LE AFF1
+U 1 1 5A11C4BA
+P 6650 3950
+F 0 "AFF1" H 6650 4617 50  0000 C CNN
+F 1 "OPD-S23010LE" H 6650 4526 50  0000 C CNN
+F 2 "Displays_7-Segment:SBC18-11SURKCGKWA" H 6650 3450 50  0001 C CNN
+F 3 "" H 6650 3950 50  0001 C CNN
+F 4 "?" H 6650 3950 60  0001 C CNN "PartNo"
+F 5 "?" H 6650 3950 60  0001 C CNN "Manufacturer"
+F 6 "?" H 6650 3950 60  0001 C CNN "Distributor"
+	1    6650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7-seg:TPIC6C596PWR U1
+U 1 1 5A11C528
+P 4200 3850
+F 0 "U1" H 4200 3850 60  0000 C CNN
+F 1 "TPIC6C596PWR" H 4600 4400 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4200 4644 60  0001 C CNN
+F 3 "" H 4200 3850 60  0000 C CNN
+F 4 "?" H 4200 3850 60  0001 C CNN "PartNo"
+F 5 "?" H 4200 3850 60  0001 C CNN "Manufacturer"
+F 6 "?" H 4200 3850 60  0001 C CNN "Distributor"
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4250 7150 4450
+Wire Wire Line
+	4950 3800 5400 3800
+Wire Wire Line
+	5400 3800 5400 3950
+Wire Wire Line
+	5400 3950 6150 3950
+Wire Wire Line
+	4950 3700 5500 3700
+Wire Wire Line
+	5500 3700 5500 3850
+Wire Wire Line
+	5500 3850 6150 3850
+Wire Wire Line
+	6150 3750 5600 3750
+Wire Wire Line
+	5600 3750 5600 3600
+Wire Wire Line
+	5600 3600 4950 3600
+Wire Wire Line
+	4950 3500 5700 3500
+Wire Wire Line
+	5700 3500 5700 4450
+Wire Wire Line
+	5700 4450 7150 4450
+Wire Wire Line
+	4950 3900 5300 3900
+Wire Wire Line
+	5300 3900 5300 4150
+Wire Wire Line
+	5300 4150 6150 4150
+Wire Wire Line
+	4950 4000 5400 4000
+Wire Wire Line
+	5400 4000 5400 4050
+Wire Wire Line
+	5400 4050 6150 4050
+Wire Wire Line
+	4950 4100 5200 4100
+Wire Wire Line
+	5200 4100 5200 3400
+Wire Wire Line
+	5200 3400 6150 3400
+Wire Wire Line
+	6150 3400 6150 3550
+Wire Wire Line
+	4950 4200 5100 4200
+Wire Wire Line
+	5100 4200 5100 3300
+Wire Wire Line
+	5100 3300 6050 3300
+Wire Wire Line
+	6050 3300 6050 3650
+Wire Wire Line
+	6050 3650 6150 3650
+$Comp
+L device:C C1
+U 1 1 5A11C96D
+P 3650 2900
+F 0 "C1" H 3764 2946 50  0000 L CNN
+F 1 "C" H 3764 2855 50  0000 L CNN
+F 2 "" H 3688 2750 50  0001 C CNN
+F 3 "" H 3650 2900 50  0001 C CNN
+	1    3650 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5A11CA63
+P 2650 3250
+F 0 "#PWR01" H 2650 3100 50  0001 C CNN
+F 1 "VCC" H 2667 3423 50  0000 C CNN
+F 2 "" H 2650 3250 50  0001 C CNN
+F 3 "" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5A11CAB8
+P 4200 2750
+F 0 "#PWR02" H 4200 2600 50  0001 C CNN
+F 1 "+5V" H 4215 2923 50  0000 C CNN
+F 2 "" H 4200 2750 50  0001 C CNN
+F 3 "" H 4200 2750 50  0001 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2750 4200 2750
+Wire Wire Line
+	4200 2750 4200 3150
+$Comp
+L power:GND #PWR03
+U 1 1 5A11DAD5
+P 3650 3050
+F 0 "#PWR03" H 3650 2800 50  0001 C CNN
+F 1 "GND" H 3655 2877 50  0000 C CNN
+F 2 "" H 3650 3050 50  0001 C CNN
+F 3 "" H 3650 3050 50  0001 C CNN
+	1    3650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5A11DC49
+P 4200 4550
+F 0 "#PWR04" H 4200 4300 50  0001 C CNN
+F 1 "GND" H 4205 4377 50  0000 C CNN
+F 2 "" H 4200 4550 50  0001 C CNN
+F 3 "" H 4200 4550 50  0001 C CNN
+	1    4200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10 J2
+U 1 1 5A11DDC3
+P 2100 3800
+F 0 "J2" H 2100 4300 50  0000 L CNN
+F 1 "DATA_IN" H 2000 3150 50  0000 L CNN
+F 2 "Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight" H 2100 3800 50  0001 C CNN
+F 3 "~" H 2100 3800 50  0001 C CNN
+F 4 "?" H 2100 3800 60  0001 C CNN "PartNo"
+F 5 "?" H 2100 3800 60  0001 C CNN "Manufacturer"
+F 6 "?" H 2100 3800 60  0001 C CNN "Distributor"
+	1    2100 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3900 3450 3900
+$Comp
+L power:GND #PWR05
+U 1 1 5A11EF4E
+P 2850 4650
+F 0 "#PWR05" H 2850 4400 50  0001 C CNN
+F 1 "GND" H 2855 4477 50  0000 C CNN
+F 2 "" H 2850 4650 50  0001 C CNN
+F 3 "" H 2850 4650 50  0001 C CNN
+	1    2850 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3800 2850 3800
+Wire Wire Line
+	1350 3600 2850 3600
+Connection ~ 2850 3800
+Wire Wire Line
+	1350 3700 2950 3700
+Wire Wire Line
+	2950 3700 2950 3800
+Wire Wire Line
+	2950 3800 3450 3800
+Wire Wire Line
+	2300 3500 3050 3500
+Wire Wire Line
+	3050 3500 3050 3700
+Wire Wire Line
+	3050 3700 3450 3700
+Wire Wire Line
+	3450 4300 3050 4300
+Wire Wire Line
+	3050 4300 3050 4000
+Wire Wire Line
+	1350 4000 3050 4000
+Wire Wire Line
+	1350 4100 2850 4100
+Connection ~ 2850 4100
+Wire Wire Line
+	2850 3600 2850 4650
+$Comp
+L power:+5V #PWR06
+U 1 1 5A1266BA
+P 2850 3250
+F 0 "#PWR06" H 2850 3100 50  0001 C CNN
+F 1 "+5V" H 2865 3423 50  0000 C CNN
+F 2 "" H 2850 3250 50  0001 C CNN
+F 3 "" H 2850 3250 50  0001 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3400 2850 3400
+Wire Wire Line
+	2850 3400 2850 3250
+Wire Wire Line
+	2650 3250 2650 4300
+Wire Wire Line
+	1350 4200 2650 4200
+Wire Wire Line
+	1350 4300 2650 4300
+Connection ~ 2650 4200
+$Comp
+L Connector:Conn_01x10 J1
+U 1 1 5A12C4A6
+P 1150 3800
+F 0 "J1" H 1150 4300 50  0000 L CNN
+F 1 "DATA_OUT" H 1000 3150 50  0000 L CNN
+F 2 "Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight" H 1150 3800 50  0001 C CNN
+F 3 "~" H 1150 3800 50  0001 C CNN
+F 4 "?" H 1150 3800 60  0001 C CNN "PartNo"
+F 5 "?" H 1150 3800 60  0001 C CNN "Manufacturer"
+F 6 "?" H 1150 3800 60  0001 C CNN "Distributor"
+	1    1150 3800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2300 3400
+Connection ~ 2300 3500
+Text Label 3050 3700 0    60   ~ 0
+SER_IN
+Text Label 3050 3800 0    60   ~ 0
+RCK
+Text Label 3050 3900 0    60   ~ 0
+SRCK
+Text Label 3100 4300 0    60   ~ 0
+~G
+Wire Wire Line
+	3450 4000 3350 4000
+Wire Wire Line
+	3350 4000 3350 4550
+Wire Wire Line
+	3350 4550 1750 4550
+Wire Wire Line
+	1750 4550 1750 3500
+Wire Wire Line
+	1750 3500 1350 3500
+Connection ~ 2300 3600
+Connection ~ 2300 3700
+Connection ~ 2300 3800
+Connection ~ 2300 3900
+Connection ~ 2300 4000
+Connection ~ 2300 4100
+Connection ~ 2300 4200
+Connection ~ 2300 4300
+$EndSCHEMATC

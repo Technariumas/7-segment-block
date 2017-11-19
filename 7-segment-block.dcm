@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPD-S23010LE
+D DISPLAY 7 SEGMENTS common A.
+K 7 SEGMENTS
+$ENDCMP
+#
+#End Doc Library
