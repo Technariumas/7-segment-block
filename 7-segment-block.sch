@@ -173,13 +173,13 @@ F 6 "?" H 700 3800 60  0001 C CNN "Distributor"
 	1    700  3800
 	-1   0    0    -1  
 $EndComp
-Text Label 4650 3700 0    60   ~ 0
+Text Label 4750 3700 0    60   ~ 0
 SER_IN
-Text Label 4650 3800 0    60   ~ 0
+Text Label 4750 3800 0    60   ~ 0
 RCK
-Text Label 4650 3900 0    60   ~ 0
+Text Label 4750 3900 0    60   ~ 0
 SRCK
-Text Label 4700 4300 0    60   ~ 0
+Text Label 4750 4300 0    60   ~ 0
 ~G
 $Comp
 L Mechanical:Mounting_Hole MK1
@@ -488,28 +488,20 @@ Wire Wire Line
 Wire Wire Line
 	5800 2750 5800 3150
 Wire Wire Line
-	2400 3900 5050 3900
-Wire Wire Line
 	3900 3800 4450 3800
 Wire Wire Line
 	3900 3600 4450 3600
 Connection ~ 4450 3800
 Wire Wire Line
-	2300 3700 4550 3700
+	3900 3700 4200 3700
 Wire Wire Line
-	4550 3700 4550 3800
+	4750 3800 5050 3800
 Wire Wire Line
-	4550 3800 5050 3800
+	3900 3500 4200 3500
 Wire Wire Line
-	3900 3500 4650 3500
+	4750 3700 5050 3700
 Wire Wire Line
-	4650 3500 4650 3700
-Wire Wire Line
-	4650 3700 5050 3700
-Wire Wire Line
-	5050 4300 4650 4300
-Wire Wire Line
-	4650 4300 4650 4100
+	5050 4300 4750 4300
 Wire Wire Line
 	4450 3600 4450 4650
 Wire Wire Line
@@ -528,13 +520,9 @@ Wire Wire Line
 Wire Wire Line
 	4950 4000 4950 4550
 Wire Wire Line
-	4950 4550 3350 4550
+	4750 4550 4950 4550
 Wire Wire Line
-	3350 4550 3350 3500
-Wire Wire Line
-	2300 3500 3350 3500
-Connection ~ 3900 3700
-Connection ~ 3900 3900
+	2300 3500 2800 3500
 Wire Wire Line
 	9100 3250 9100 3650
 Connection ~ 9100 3550
@@ -570,8 +558,7 @@ Wire Wire Line
 	3900 4000 4450 4000
 Connection ~ 4450 4000
 Wire Wire Line
-	2500 4100 4650 4100
-Connection ~ 3900 4100
+	3900 4100 4200 4100
 Wire Wire Line
 	1700 5500 1400 5500
 Wire Wire Line
@@ -631,10 +618,10 @@ Wire Wire Line
 	900  4000 1050 4000
 Connection ~ 1050 4000
 $Comp
-L device:R_Small R?
+L device:R_Small R9
 U 1 1 5A17D638
 P 1000 3500
-F 0 "R?" V 950 3500 50  0000 C CNN
+F 0 "R9" V 950 3500 50  0000 C CNN
 F 1 "100" V 950 3650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1000 3500 50  0001 C CNN
 F 3 "" H 1000 3500 50  0001 C CNN
@@ -645,10 +632,10 @@ F 6 "?" H 1000 3500 60  0001 C CNN "Distributor"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R?
+L device:R_Small R10
 U 1 1 5A17D6EE
 P 1000 3700
-F 0 "R?" V 950 3700 50  0000 C CNN
+F 0 "R10" V 950 3700 50  0000 C CNN
 F 1 "100" V 950 3850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1000 3700 50  0001 C CNN
 F 3 "" H 1000 3700 50  0001 C CNN
@@ -659,10 +646,10 @@ F 6 "?" H 1000 3700 60  0001 C CNN "Distributor"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R?
+L device:R_Small R11
 U 1 1 5A17D736
 P 1000 3900
-F 0 "R?" V 950 3900 50  0000 C CNN
+F 0 "R11" V 950 3900 50  0000 C CNN
 F 1 "100" V 950 4050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1000 3900 50  0001 C CNN
 F 3 "" H 1000 3900 50  0001 C CNN
@@ -673,10 +660,10 @@ F 6 "?" H 1000 3900 60  0001 C CNN "Distributor"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R_Small R?
+L device:R_Small R12
 U 1 1 5A17D784
 P 1000 4100
-F 0 "R?" V 950 4100 50  0000 C CNN
+F 0 "R12" V 950 4100 50  0000 C CNN
 F 1 "100" V 950 4250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1000 4100 50  0001 C CNN
 F 3 "" H 1000 4100 50  0001 C CNN
@@ -694,4 +681,43 @@ Wire Wire Line
 	1100 3900 1550 3900
 Wire Wire Line
 	1100 4100 1400 4100
+Text Label 4750 4550 0    60   ~ 0
+SER_OUT
+Text Label 2800 3500 2    60   ~ 0
+SER_OUT
+Wire Wire Line
+	4750 3900 5050 3900
+Text Label 4200 3900 2    60   ~ 0
+SRCK
+Text Label 4200 4100 2    60   ~ 0
+RCK
+Text Label 4200 3500 2    60   ~ 0
+SER_IN
+Text Label 2800 4100 2    60   ~ 0
+RCK
+Wire Wire Line
+	2800 3700 2300 3700
+Wire Wire Line
+	2400 3900 2800 3900
+Wire Wire Line
+	4200 3900 3900 3900
+Text Label 2800 3900 2    60   ~ 0
+SRCK
+Text Label 4200 3700 2    60   ~ 0
+~G
+Wire Wire Line
+	2500 4100 2800 4100
+Text Label 2800 3700 2    60   ~ 0
+~G
+$Comp
+L Logic_74xx:74LS243 U?
+U 1 1 5A1AFDE1
+P 3700 5900
+F 0 "U?" H 3700 6678 50  0000 C CNN
+F 1 "74LS243" H 3700 6587 50  0000 C CNN
+F 2 "" H 3700 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS243" H 3700 5900 50  0001 C CNN
+	1    3700 5900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
