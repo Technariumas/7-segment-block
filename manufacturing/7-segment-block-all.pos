@@ -1,0 +1,27 @@
+### Module positions - created on Sun Dec 24 15:02:44 2017 ###
+### Printed by Pcbnew version kicad no-vcs-found-b05a40e~61~ubuntu16.04.1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val           Package                             PosX       PosY       Rot  Side
+C1        C             C_0805_HandSoldering            172.9000   -67.7000    0.0000  bottom
+C2        C             C_0805_HandSoldering            173.8000   -83.9000  180.0000  bottom
+C4        C             C_0805_HandSoldering            160.2000   -50.3000   90.0000  bottom
+C5        C             C_0805_HandSoldering            142.2000   -76.6000    0.0000  bottom
+C6        C             C_0805_HandSoldering            158.3000   -79.0000   90.0000  bottom
+R1        90            R_0805_HandSoldering            135.0000   -73.0000    0.0000  bottom
+R2        180           R_0805_HandSoldering            135.0000   -70.5000    0.0000  bottom
+R3        180           R_0805_HandSoldering            135.0000   -67.8000    0.0000  bottom
+R4        180           R_0805_HandSoldering            135.0000   -65.4000    0.0000  bottom
+R5        180           R_0805_HandSoldering            187.1000   -62.8000  180.0000  bottom
+R6        180           R_0805_HandSoldering            187.1000   -65.4000  180.0000  bottom
+R7        180           R_0805_HandSoldering            187.1000   -70.4000  180.0000  bottom
+R8        180           R_0805_HandSoldering            187.1000   -72.9000  180.0000  bottom
+R9        100           R_0805_HandSoldering            163.0000   -90.1900  180.0000  bottom
+R10       100           R_0805_HandSoldering            163.0000   -88.2900  180.0000  bottom
+R11       100           R_0805_HandSoldering            163.0000   -86.3900  180.0000  bottom
+R12       100           R_0805_HandSoldering            163.0000   -84.4900  180.0000  bottom
+R13       10k           R_0805_HandSoldering            142.0000   -59.1000  180.0000  bottom
+R14       10k           R_0805_HandSoldering            140.5000   -61.3000  180.0000  bottom
+U1        TPIC6C596PWR  SOIC-16_3.9x9.9mm_Pitch1.27mm   174.4000   -61.5000    0.0000  bottom
+U2        74LS243       SOIC-14_3.9x8.7mm_Pitch1.27mm   174.4000   -78.3000    0.0000  bottom
+## End

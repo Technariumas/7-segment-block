@@ -1,0 +1,33 @@
+G04 Gerber job file with board parameters*
+%TF.FileFunction,JobInfo*%
+%TF.Part,SinglePCB*%
+G04 Single PCB fabrication instructions*
+%TF.GenerationSoftware,KiCad,Pcbnew,no-vcs-found-b05a40e~61~ubuntu16.04.1*%
+%TF.CreationDate,2017-12-24T14:58:55+02:00*%
+%TF.ProjectId,7-segment-block,372D7365676D656E742D626C6F636B2E,rev?*%
+%MOMM*%
+G04 Overall board parameters*
+%TJ.B_Size_X,90.200*%
+%TJ.B_Size_Y,48.000*%
+%TJ.B_LayerNum,2*%
+%TJ.B_Overall_Thickness,1.600*%
+%TJ.B_Legend_Present,Both*%
+%TJ.B_SolderMask_Present,Both*%
+G04 board design rules*
+%TJ.D_PadToPad_Out,0.200*%
+%TJ.D_PadToTrack_Out,0.200*%
+%TJ.D_TrackToTrack_Out,0.200*%
+%TJ.D_MinLineWidth_Out,0.600*%
+%TJ.D_TrackToRegion_Out,0.508*%
+%TJ.D_RegionToRegion_Out,0.508*%
+G04 Layer Structure*
+%TJ.L_"Copper,L1,Top",Positive,7-segment-block-F.Cu.gbr*%
+%TJ.L_"Copper,L2,Bot",Positive,7-segment-block-B.Cu.gbr*%
+%TJ.L_"SolderPaste,Bot",Positive,7-segment-block-B.Paste.gbr*%
+%TJ.L_"SolderPaste,Top",Positive,7-segment-block-F.Paste.gbr*%
+%TJ.L_"Legend,Bot",Positive,7-segment-block-B.SilkS.gbr*%
+%TJ.L_"Legend,Top",Positive,7-segment-block-F.SilkS.gbr*%
+%TJ.L_"SolderMask,Bot",Negative,7-segment-block-B.Mask.gbr*%
+%TJ.L_"SolderMask,Top",Negative,7-segment-block-F.Mask.gbr*%
+%TJ.L_"Profile",Positive,7-segment-block-Edge.Cuts.gbr*%
+M02*
