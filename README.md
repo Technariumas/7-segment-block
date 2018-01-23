@@ -31,53 +31,23 @@ void setup() {
   Serial.begin(9600);
   randomSeed(analogRead(0));
   
-  pinMode(6, OUTPUT);
+  //Output enable
+  pinMode(6, OUTPUT);  
   digitalWrite(6, HIGH);
+ 
+  //Latch
   pinMode(10, OUTPUT);
   digitalWrite(10, HIGH);
+ 
+  //MOSI
   pinMode(11, OUTPUT);
+  
+  //SCK
   pinMode(13, OUTPUT);
 
   SPI.begin();
   SPI.setDataMode(SPI_MODE0);
   digitalWrite(6, LOW);  
-}
-
-unsigned int get_tens(unsigned int num) {
-  unsigned int tens = 0;
-  if (num == 100) {
-    tens = 9;
-  }
-  else if (num == 0) {
-    tens = 10;
-  }
-  else {
-    tens = num/10;
-  }
-  return tens;  
-}
-
-unsigned int get_single_digits(unsigned int num) {
-  unsigned int sd = 0;
-  if (num == 100) {
-    sd = 9;
-  }
-  else {
-    sd = num % 10;
-  }
-  return sd;
-}
-
-
-void displayDigits(uint8_t digit1, uint8_t digit2, uint8_t digit3, uint8_t digit4, uint8_t digit5, uint8_t digit6) {
-    digitalWrite(10, LOW);
-    SPI.transfer(digit1);
-    SPI.transfer(digit2);
-    SPI.transfer(digit3);
-    SPI.transfer(digit4);  
-    SPI.transfer(digit5);
-    SPI.transfer(digit6);   
-    digitalWrite(10, HIGH);  
 }
 
 void displayDigit(uint8_t digit1) {
