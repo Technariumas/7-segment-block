@@ -1,14 +1,3 @@
-# 7-segment-block
-
-A big 7 segment plug and play module designed to be easily chainable and be driven by SPI bus.
-
-![arduino](pics/7-segmed-bloc-arduino.jpg)
-
-![front](pics/7-segmed-bloc-front.jpg)
-
-![back](pics/7-segmed-bloc-back.jpg)
-
-```Arduino
 #include<SPI.h>
 #include <Bounce2.h>
 
@@ -102,4 +91,6 @@ void loop() {
   delay(10);
 }
 
-```
+
+
+
